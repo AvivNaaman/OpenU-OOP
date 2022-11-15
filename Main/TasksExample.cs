@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 class TasksExample
 {
     // This is the entry point of a C# program  
-    static void Maina(string[] args)
+    static void Main(string[] args)
     {
         // Main execution starts here  
         Console.WriteLine("Main thread starts here.");

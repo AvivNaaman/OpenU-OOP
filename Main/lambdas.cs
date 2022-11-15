@@ -4,7 +4,7 @@ using System;
 
 public class LambdaExample
 {
-    public static void Maina(string[] args)
+    public static void Main(string[] args)
     {
         Example1();
         Console.WriteLine();

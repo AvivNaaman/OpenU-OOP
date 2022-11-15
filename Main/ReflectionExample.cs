@@ -5,7 +5,7 @@ using System.Configuration;
 
 public class ReflectionExample
 {
-    public static void Maina(string[] args)
+    public static void Main(string[] args)
     {
         var reflectionDllPath = ConfigurationManager.AppSettings["ReflectionDllPath"];
         var dll = Assembly.LoadFrom(reflectionDllPath);

@@ -4,7 +4,7 @@ using System.Text.Json;
 
 public class JsonExample
 {
-    public static void Maina(string[] args)
+    public static void Main(string[] args)
     {
         string data = @" [ {""name"": ""John Doe"",    ""occupation"": ""gardener""}, 
                            {""name"": ""Peter Novak"", ""occupation"": ""driver""} ]";

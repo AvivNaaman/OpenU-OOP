@@ -4,7 +4,7 @@ using System.Threading;
 class ThreadExample
 {
     // This is the entry point of a C# program  
-    static void MainT(string[] args)
+    static void Main(string[] args)
     {
         // Main execution starts here  
         Console.WriteLine("Main thread starts here.");
