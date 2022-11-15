@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Cars>
+  <Car Manufacture="Ford">
+    <Model>Mustang</Model>
+    <AvaliableColors>
+      <Color>Black</Color>
+    </AvaliableColors>
+  </Car>
+  <Car Manufacture="BMW">
+    <Model>X</Model>
+    <AvaliableColors>
+      <Color>White</Color>
+      <Color>Grey</Color>
+      <Color>Blue</Color>
+    </AvaliableColors>
+  </Car>
+</Cars>

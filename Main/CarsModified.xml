@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Cars>
+  <Car Manufacture="Renualt">
+    <Model>Clio</Model>
+    <AvaliableColors>
+      <Color>Red</Color>
+      <Color>Black</Color>
+      <Color>Green</Color>
+    </AvaliableColors>
+  </Car>
+  <Car Manufacture="Ford">
+    <Model>Mustang</Model>
+    <AvaliableColors>
+      <Color>Red</Color>
+      <Color>Black</Color>
+    </AvaliableColors>
+  </Car>
+  <Car Manufacture="BMW">
+    <Model>X</Model>
+    <AvaliableColors>
+      <Color>White</Color>
+      <Color>Grey</Color>
+      <Color>Blue</Color>
+    </AvaliableColors>
+  </Car>
+</Cars>
