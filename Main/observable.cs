@@ -1,4 +1,3 @@
-using ObservableCollections;
 using System.Collections.Specialized;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
