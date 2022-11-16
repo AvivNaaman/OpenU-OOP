@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Main", "Main\Main.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FSWatcher", "FSWatcher\FSWatcher.csproj", "{70856BF8-EF84-45B6-8DF4-FA0C6DB98C16}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionMethods", "ExtensionMethods\ExtensionMethods.csproj", "{DCAD29DF-19E2-4978-9D65-877A19A80412}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppCfgExample", "AppCfgExample\AppCfgExample.csproj", "{E9E13AE3-4161-4E48-BBE8-003A90F08590}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{70856BF8-EF84-45B6-8DF4-FA0C6DB98C16}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{70856BF8-EF84-45B6-8DF4-FA0C6DB98C16}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{70856BF8-EF84-45B6-8DF4-FA0C6DB98C16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCAD29DF-19E2-4978-9D65-877A19A80412}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCAD29DF-19E2-4978-9D65-877A19A80412}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCAD29DF-19E2-4978-9D65-877A19A80412}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCAD29DF-19E2-4978-9D65-877A19A80412}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9E13AE3-4161-4E48-BBE8-003A90F08590}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9E13AE3-4161-4E48-BBE8-003A90F08590}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9E13AE3-4161-4E48-BBE8-003A90F08590}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9E13AE3-4161-4E48-BBE8-003A90F08590}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
