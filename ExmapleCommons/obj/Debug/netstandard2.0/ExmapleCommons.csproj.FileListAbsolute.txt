@@ -1,0 +1,10 @@
+/Users/avivnaaman/Projects/oop/ExmapleCommons/bin/Debug/netstandard2.0/ExmapleCommons.deps.json
+/Users/avivnaaman/Projects/oop/ExmapleCommons/bin/Debug/netstandard2.0/ExmapleCommons.dll
+/Users/avivnaaman/Projects/oop/ExmapleCommons/bin/Debug/netstandard2.0/ExmapleCommons.pdb
+/Users/avivnaaman/Projects/oop/ExmapleCommons/obj/Debug/netstandard2.0/ExmapleCommons.csproj.AssemblyReference.cache
+/Users/avivnaaman/Projects/oop/ExmapleCommons/obj/Debug/netstandard2.0/ExmapleCommons.GeneratedMSBuildEditorConfig.editorconfig
+/Users/avivnaaman/Projects/oop/ExmapleCommons/obj/Debug/netstandard2.0/ExmapleCommons.AssemblyInfoInputs.cache
+/Users/avivnaaman/Projects/oop/ExmapleCommons/obj/Debug/netstandard2.0/ExmapleCommons.AssemblyInfo.cs
+/Users/avivnaaman/Projects/oop/ExmapleCommons/obj/Debug/netstandard2.0/ExmapleCommons.csproj.CoreCompileInputs.cache
+/Users/avivnaaman/Projects/oop/ExmapleCommons/obj/Debug/netstandard2.0/ExmapleCommons.dll
+/Users/avivnaaman/Projects/oop/ExmapleCommons/obj/Debug/netstandard2.0/ExmapleCommons.pdb

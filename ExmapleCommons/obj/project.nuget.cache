@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "qsvRlgw20eHTO70w66CFRLOily6CjSJ8bvJKwdwPTnpfMMcM5BBOBBVoKGKr62pBDgouUHb2Gob0Sdtl+86H6A==",
+  "success": true,
+  "projectFilePath": "/Users/avivnaaman/Projects/oop/ExmapleCommons/ExmapleCommons.csproj",
+  "expectedPackageFiles": [
+    "/Users/avivnaaman/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/Users/avivnaaman/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

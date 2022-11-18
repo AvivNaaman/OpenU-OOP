@@ -19,7 +19,6 @@ projectWatcher.NotifyFilter = NotifyFilters.Attributes
 projectWatcher.Changed += fileWritten;
 projectWatcher.Filter = "*.cs";
 projectWatcher.IncludeSubdirectories = true;
-projectWatcher.EnableRaisingEvents = true;
 
 Console.WriteLine("Press enter to exit.");
 Console.ReadLine();

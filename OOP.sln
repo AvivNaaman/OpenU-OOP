@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionMethods", "Extensi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppCfgExample", "AppCfgExample\AppCfgExample.csproj", "{E9E13AE3-4161-4E48-BBE8-003A90F08590}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqExamples", "LinqExamples\LinqExamples.csproj", "{5EE93FE4-EB20-44BD-84D8-2E47ED49C0B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExmapleCommons", "ExmapleCommons\ExmapleCommons.csproj", "{C5BBDE30-16EF-4952-B587-B8CA55782742}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{E9E13AE3-4161-4E48-BBE8-003A90F08590}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E9E13AE3-4161-4E48-BBE8-003A90F08590}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E9E13AE3-4161-4E48-BBE8-003A90F08590}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EE93FE4-EB20-44BD-84D8-2E47ED49C0B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EE93FE4-EB20-44BD-84D8-2E47ED49C0B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EE93FE4-EB20-44BD-84D8-2E47ED49C0B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EE93FE4-EB20-44BD-84D8-2E47ED49C0B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5BBDE30-16EF-4952-B587-B8CA55782742}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5BBDE30-16EF-4952-B587-B8CA55782742}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5BBDE30-16EF-4952-B587-B8CA55782742}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5BBDE30-16EF-4952-B587-B8CA55782742}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
