@@ -1,14 +1,15 @@
 ﻿using System;
 namespace EventDrivenProgramming;
 
-class MyTimeEventCreator
+class DelegateEventCreator
 {
+    // They replace the interface.
     public delegate void MyEventHandler(string callerName, string payload);
     public event MyEventHandler OnMyEvent;
 
     public void run()
     {
-        for (int i = 50; i > 0; i--)
+        for (int i = 10; i > 0; i--)
         {
             // invoke callback
             OnMyEvent?.Invoke("MyTimeEventCreator", i.ToString());

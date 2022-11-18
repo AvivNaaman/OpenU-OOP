@@ -3,8 +3,9 @@ namespace ExmapleCommons
 {
     /// <summary>
     /// This class describes a simple person.
+    /// You cannot and should not inherit from this class.
     /// </summary>
-    public class Person
+    public sealed class Person
     {
         /// <summary>
         /// Person's first name

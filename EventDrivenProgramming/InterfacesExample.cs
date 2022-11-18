@@ -9,25 +9,33 @@ public interface IMyEventHandler
     /// <summary>
     /// This method is called when My Event is triggered.
     /// </summary>
-    /// <param name="callerName">The name of my event caller.</param>
-    /// <param name="payload">The payload of the event.</param>
     void OnMyEvent(string callerName, string payload);
 }
+
 
 public class InterfaceEventHandlerExample : IMyEventHandler
 {
     public string LogPrefix { get; set; } = "InterfaceHandler";
 
-    public InterfaceEventHandlerExample(string? logPrefix)
-    {
-        if (logPrefix is not null)
-        {
-            LogPrefix = logPrefix;
-        }
-    }
-
     public void OnMyEvent(string callerName, string payload)
     {
         Console.WriteLine($"{LogPrefix}: Event called from {callerName}, Payload is {payload}.");
+    }
+}
+
+
+public class InterfaceEventCreator
+{
+    public IMyEventHandler handler { get; set; }
+
+    public void run()
+    {
+        for (int i = 10; i > 0; i--)
+        {
+            // sleep 1/2 second
+            Thread.Sleep(500);
+            // handle the event
+            handler.OnMyEvent("TimeInterfaceExmaple", i.ToString());
+        }
     }
 }
