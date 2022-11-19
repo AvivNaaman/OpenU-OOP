@@ -1,33 +1,68 @@
 ﻿using System;
+using System.IO;
+using System.Linq;
+using System.Runtime.Serialization;
+using System.Runtime.Serialization.Formatters.Binary;
+
+using System.Text;
+using System.Threading.Tasks;
 using System.Text.Json;
+using System.Text.Json.Serialization;
 
-
-public class JsonExample
+[Serializable]
+class Tutorial
 {
-    public static void Main(string[] args)
+    [JsonPropertyName("TutorialID")]
+    public int ID { get; set; }
+    [JsonPropertyName("TutorialName")]
+    public String Name { get; set; }
+
+    static void Main(string[] args)
     {
-        string data = @" [ {""name"": ""John Doe"",    ""occupation"": ""gardener""}, 
-                           {""name"": ""Peter Novak"", ""occupation"": ""driver""} ]";
-
-        JsonDocument doc = JsonDocument.Parse(data);
-        JsonElement root = doc.RootElement;
-
-        Console.WriteLine(root);
-
-        var u1 = root[0];
-        var u2 = root[1];
+        BinaryExample();
+        JsonExample();
+    }
 
 
+    static void BinaryExample()
+    {
+        Tutorial obj = new Tutorial();
+        obj.ID = 1;
+        obj.Name = ".Net";
 
-        Console.WriteLine(u1);
-        Console.WriteLine(u2);
+        IFormatter formatter = new BinaryFormatter();
+        Stream stream = new FileStream(@"ExampleNew.txt", FileMode.Create, FileAccess.Write);
 
-        Console.WriteLine(u1.GetProperty("name"));
-        Console.WriteLine(u1.GetProperty("occupation"));
+        formatter.Serialize(stream, obj);
+        stream.Close();
 
-        Console.WriteLine(u2.GetProperty("name"));
-        Console.WriteLine(u2.GetProperty("occupation"));
+        Console.ReadKey();
 
-        doc.Dispose();
+        stream = new FileStream(@"ExampleNew.txt", FileMode.Open, FileAccess.Read);
+        Tutorial objnew = (Tutorial)formatter.Deserialize(stream);
+
+        Console.WriteLine(objnew.ID);
+        Console.WriteLine(objnew.Name);
+
+        Console.ReadKey();
+    }
+
+    static void JsonExample()
+    {
+        Tutorial obj = new Tutorial();
+        obj.ID = 1;
+        obj.Name = ".Net";
+
+        string jsonFormat = JsonSerializer.Serialize(obj);
+        Console.WriteLine(jsonFormat);
+
+
+        Console.ReadLine();
+
+        Tutorial obj2 = JsonSerializer.Deserialize<Tutorial>(jsonFormat);
+        Console.WriteLine(obj2.ID);
+        Console.WriteLine(obj2.Name);
+
+        Console.ReadLine();
     }
 }
