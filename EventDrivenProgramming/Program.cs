@@ -7,7 +7,7 @@ class Program
 
 
         // Interface Example:
-        InterfaceExample("Inteface");
+        //InterfaceExample("Inteface");
 
         // Delegate Example:
         DelegateExample("Delegate");
@@ -27,8 +27,19 @@ class Program
     public static void DelegateExample(string logPrefix)
     {
         DelegateEventCreator dec = new();
+
+        dec.OnMyEvent += Dec_OnMyEvent;
+
+        dec.OnMyEvent -= Dec_OnMyEvent;
+
         dec.OnMyEvent += (caller, payload) => Console.WriteLine($"{logPrefix}: {payload} from {caller}");
+
         dec.run();
+    }
+
+    private static void Dec_OnMyEvent(string callerName, string payload)
+    {
+        Console.WriteLine($"HI !! {payload} from {callerName}");
     }
 }
 

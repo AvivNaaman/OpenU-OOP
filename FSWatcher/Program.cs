@@ -1,9 +1,5 @@
-﻿using System.IO;
-
-void fileWritten(object sender, FileSystemEventArgs eventArgs)
-{
-    Console.WriteLine("Source File Changed!! " + eventArgs.FullPath);
-}
+﻿using System;
+using System.IO;
 
 using FileSystemWatcher projectWatcher = new(@"/Users/avivnaaman/Projects/oop/FSWatcher");
 
@@ -16,9 +12,16 @@ projectWatcher.NotifyFilter = NotifyFilters.Attributes
                                  | NotifyFilters.Security
                                  | NotifyFilters.Size;
 
-projectWatcher.Changed += fileWritten;
-projectWatcher.Filter = "*.cs";
+projectWatcher.Changed += ProjectWatcher_Changed;
+
+void ProjectWatcher_Changed(object sender, FileSystemEventArgs e)
+{
+    Console.WriteLine("Text File Changed!! " + e.FullPath);
+}
+
+projectWatcher.Filter = "*.txt";
 projectWatcher.IncludeSubdirectories = true;
+projectWatcher.EnableRaisingEvents = true;
 
 Console.WriteLine("Press enter to exit.");
 Console.ReadLine();

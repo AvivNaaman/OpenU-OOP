@@ -5,6 +5,7 @@ class DelegateEventCreator
 {
     // They replace the interface.
     public delegate void MyEventHandler(string callerName, string payload);
+
     public event MyEventHandler OnMyEvent;
 
     public void run()
