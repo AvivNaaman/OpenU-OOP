@@ -22,6 +22,7 @@ public class Program {
         var connectionString = ConfigurationManager.ConnectionStrings["Main"];
         Console.WriteLine($"Connection Strings are somewhat similar: '{connectionString}'");
 
+
         var myCustomCfg = (BehaviorSettings)System.Configuration.ConfigurationManager.GetSection("Behavior");
         Console.WriteLine($"Current Refresh Timeout is: {myCustomCfg.RefreshTimeout}");
     }

@@ -21,6 +21,7 @@ void ProjectWatcher_Changed(object sender, FileSystemEventArgs e)
 
 projectWatcher.Filter = "*.txt";
 projectWatcher.IncludeSubdirectories = true;
+
 projectWatcher.EnableRaisingEvents = true;
 
 Console.WriteLine("Press enter to exit.");

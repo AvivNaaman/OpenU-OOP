@@ -86,7 +86,7 @@ Console.WriteLine($"Sorted Lower case chars: {new String(upperCaseSorted.ToArray
 
 
 var sortedFirstNames = from f in firstNames
-                       orderby f
+                       orderby f.ToLower()
                        select f;
 Console.WriteLine($"Sorted first names {CollectionToString(sortedFirstNames)}");
 

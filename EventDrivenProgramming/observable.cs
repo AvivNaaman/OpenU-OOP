@@ -5,7 +5,7 @@ using System;
 
 public class ObservableExamle
 {
-    public static void Main(string[] args)
+    public static void Main()//Main(string[] args)
     {
         var list = new ObservableCollection<int>();
         list.CollectionChanged += (object sender, NotifyCollectionChangedEventArgs e) =>
